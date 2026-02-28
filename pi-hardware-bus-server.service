@@ -1,0 +1,14 @@
+[Unit]
+Description=SO101 Pi hardware bus server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/usr/bin/python3 /home/ubuntu/pi_hardware_bus.py server --serial-port /dev/follower --baud 1000000 --listen-host 0.0.0.0 --listen-port 5500
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
