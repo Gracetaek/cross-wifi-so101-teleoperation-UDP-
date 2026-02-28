@@ -1,0 +1,5 @@
+# Laptop leader example
+SUBSYSTEM=="tty", ATTRS{idVendor}=="xxxx", ATTRS{idProduct}=="yyyy", ATTRS{serial}=="LEADER_SERIAL", SYMLINK+="leader", MODE:="0666"
+
+# Pi follower example
+SUBSYSTEM=="tty", ATTRS{idVendor}=="xxxx", ATTRS{idProduct}=="yyyy", ATTRS{serial}=="FOLLOWER_SERIAL", SYMLINK+="follower", MODE:="0666"
