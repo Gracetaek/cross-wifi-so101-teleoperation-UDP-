@@ -11,6 +11,10 @@ This repository explains **one implementation path only** for SO101 cross-WiFi t
 
 The goal is to help someone build this setup **from scratch** without mixing multiple methods.
 
+
+https://github.com/user-attachments/assets/46edfe55-a51b-4601-9d0d-2555e2b48576
+
+
 ## What this repo does
 
 The laptop does not talk to the follower arm directly.
